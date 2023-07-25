@@ -53,7 +53,7 @@ int print_octal(va_list typ, char buf[],
 
 	UNUSED(wdth);
 
-	num = convert_sz_unsgnd(num, sz);
+	num = convert_size_unsgnd(num, sz);
 
 	if (num == 0)
 		buf[i--] = '0';
@@ -129,7 +129,7 @@ int print_hexa(va_list typ, char mp_to[], char buf[],
 	unsigned long int init_num = num;
 
 	UNUSED(wdth);
-	num = convert_sz_unsgnd(num, sz);
+	num = convert_size_unsgnd(num, sz);
 
 	if (num == 0)
 		buf[i--] = '0';

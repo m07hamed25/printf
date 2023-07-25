@@ -24,7 +24,7 @@ int _printf(const char *frmt, ...)
 		if (frmt[i] != '%')
 		{
 			buff[buff_ind++] = frmt[i];
-			if (buff_ind == BUFF_SIZE)
+			if (buff_ind == BUFSIZ)
 				print_buff(buff, &buff_ind);
 			/* write(1, &frmt[i], 1);*/
 			printed_chars++;
