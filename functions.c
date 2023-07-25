@@ -111,7 +111,7 @@ int print_int(va_list typ, char buf[], int flg, int wdth, int prcs, int sz)
 	long int n = va_arg(typ, long int);
 	unsigned long int num;
 
-	n = convert_sz_number(n, sz);
+	n = convert_size_number(n, sz);
 
 	if (n == 0)
 		buf[i--] = '0';

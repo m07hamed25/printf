@@ -16,7 +16,7 @@ int print_unsigned(va_list typ, char buf[],
 	int i = BUFF_sz - 2;
 	unsigned long int num = va_arg(typ, unsigned long int);
 
-	num = convert_sz_unsgnd(num, sz);
+	num = convert_size_unsgnd(num, sz);
 
 	if (num == 0)
 		buf[i--] = '0';

@@ -12,7 +12,7 @@ int _printf(const char *frmt, ...)
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
-	char buff[BUFF_SIZE];
+	char buff[BUFSIZ];
 
 	if (frmt == NULL)
 		return (-1);
